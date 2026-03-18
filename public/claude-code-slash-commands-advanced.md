@@ -1,14 +1,14 @@
 ---
-title: "Claude Code スラッシュコマンド完全版：見落としがちな4つのコマンド"
+title: Claude Code スラッシュコマンド完全版：見落としがちな4つのコマンド
 tags:
+  - 開発ツール
+  - AI
+  - LLM
   - Claude
   - ClaudeCode
-  - AI
-  - 開発ツール
-  - LLM
 private: false
-updated_at: "2026-03-19T07:10:00+09:00"
-id: null
+updated_at: '2026-03-19T07:07:08+09:00'
+id: 267af1b0836c2c010ca5
 organization_url_name: null
 slide: false
 ignorePublish: false
