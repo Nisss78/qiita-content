@@ -1,7 +1,13 @@
 ---
-title: "テスト記事：マークダウンの基本"
-tags: ['テスト']
+title: テスト記事：マークダウンの基本
+tags:
+  - テスト
 private: false
+updated_at: '2026-03-10T02:22:41+09:00'
+id: cf6f784b8457c3f60301
+organization_url_name: null
+slide: false
+ignorePublish: false
 ---
 
 これは複数プラットフォームへの投稿テスト用記事です。
