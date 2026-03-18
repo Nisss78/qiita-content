@@ -1,14 +1,14 @@
 ---
-title: "Claude Code 完全ガイド：全スラッシュコマンド解説と実践的使用例"
+title: Claude Code 完全ガイド：全スラッシュコマンド解説と実践的使用例
 tags:
+  - 開発ツール
+  - AI
+  - LLM
   - Claude
   - ClaudeCode
-  - AI
-  - 開発ツール
-  - LLM
 private: false
-updated_at: '2026-03-19T06:50:00+09:00'
-id: null
+updated_at: '2026-03-19T06:51:00+09:00'
+id: 05e96a100652baedaba2
 organization_url_name: null
 slide: false
 ignorePublish: false
