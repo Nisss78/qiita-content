@@ -1,17 +1,18 @@
 ---
 title: "Claude Code 完全ガイド：全スラッシュコマンド解説と実践的使用例"
-tags: []
+tags:
+  - Claude
+  - ClaudeCode
+  - AI
+  - 開発ツール
+  - LLM
 private: false
+updated_at: '2026-03-19T06:50:00+09:00'
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: false
 ---
-
----
-title: "Claude Code 完全ガイド：全スラッシュコマンド解説と実践的使用例"
-description: "Claude Codeの全標準スラッシュコマンドを網羅的に解説。各コマンドの使い方、実践的な使用例、Tipsまで含めた教科書的なガイドです。"
-tags: ["Claude", "ClaudeCode", "AI", "開発ツール", "LLM"]
-emoji: 🤖
----
-
-
 
 Claude Code（claude.ai/code）はAnthropicが提供するAIアシスタント付きコーディングツールです。ターミナル上で動作し、コードの生成、編集、デバッグ、Git操作などを自然言語で指示できます。
 
@@ -105,15 +106,6 @@ Claude: 会話を要約しました：
 - 長時間のセッションでコンテキストが肥大化した時
 - コストを抑えつつ会話を継続したい時
 - 重要な決定事項を整理したい時
-
-**コツ:**
-```
-# より詳細な要約を指定
-/compact --detailed
-
-# 特定のトピックに絞って要約
-/compact "コンポーネント設計について"
-```
 
 ---
 
@@ -222,19 +214,19 @@ Claude: プロジェクトを初期化しました。
 User: /review
 Claude: コードレビュー結果:
 
-## 🔍 変更されたファイル
+## 変更されたファイル
 - src/components/AuthForm.tsx
 
-## 📝 改善提案
+## 改善提案
 
-1. **セキュリティ**: パスワードフィールドにautocomplete属性を追加
+1. セキュリティ: パスワードフィールドにautocomplete属性を追加
    ```tsx
    <input type="password" autoComplete="new-password" />
    ```
 
-2. **パフォーマンス**: フォームバリデーションにデバウンスを追加推奨
+2. パフォーマンス: フォームバリデーションにデバウンスを追加推奨
 
-3. **型安全性**: APIレスポンスにZodスキーマの使用を検討
+3. 型安全性: APIレスポンスにZodスキーマの使用を検討
 ```
 
 **活用シーン:**
@@ -289,11 +281,11 @@ Claude: PR #42 のコメント:
 User: /doctor
 Claude: 環境診断結果:
 
-✅ Claude Code バージョン: 1.0.0
-✅ Node.js: v20.10.0
-✅ API接続: 正常
-✅ Git: 2.43.0
-⚠️  設定ファイル: .claude/config.json が見つかりません
+Claude Code バージョン: 1.0.0
+Node.js: v20.10.0
+API接続: 正常
+Git: 2.43.0
+設定ファイル: .claude/config.json が見つかりません
 
 推奨アクション:
 - `/init` を実行して設定ファイルを作成してください
@@ -372,7 +364,7 @@ Claude: Vimモードを有効にしました。
 User: /login
 Claude: ログインプロセスを開始します...
 ブラウザが開きます。認証を完了してください。
-✅ ログイン成功: user@example.com
+ログイン成功: user@example.com
 ```
 
 **活用シーン:**
@@ -430,15 +422,6 @@ Claude: 権限設定:
 - 特定ディレクトリへのアクセス許可
 - コマンド実行ポリシーの変更
 
-**詳細設定:**
-```
-# 特定のディレクトリへの書き込みを許可
-/permissions allow write /home/user/safe-dir
-
-# 危険なコマンドをブロック
-/permissions deny exec rm -rf
-```
-
 ---
 
 ## 設定・カスタマイズ
@@ -473,15 +456,6 @@ Claude: 現在の設定:
 - 出力長の調整
 - パラメータの微調整
 
-**モデル切り替え:**
-```
-# より高性能なモデルに切り替え
-/config model claude-opus-4
-
-# 高速なモデルに切り替え
-/config model claude-haiku
-```
-
 ---
 
 ### `/memory` - メモリ管理
@@ -510,12 +484,6 @@ Claude: メモリ状態:
 - プロジェクト固有の指示を追加
 - よく使うコマンドやパターンを記憶
 - チーム開発でのコンテキスト共有
-
-**メモリへの追加:**
-```
-/memory add "このプロジェクトではTailwind CSSを使用"
-/memory add "テストフレームワークはVitestを使用"
-```
 
 ---
 
@@ -613,10 +581,10 @@ ECサイトのフロントエンド開発
 複雑なタスクは段階的に分解すると良い結果が得られます。
 
 ```
-❌ 悪い例:
+悪い例:
 > ECサイトを全部作って
 
-✅ 良い例:
+良い例:
 > 1. まずプロジェクト構造を設計して
 > 2. 次にデータベーススキーマを定義して
 > 3. その後APIエンドポイントを作成して
@@ -659,7 +627,7 @@ Claude CodeはGit操作も得意です。
 エラーが発生した場合は、エラーメッセージ全体を共有しましょう。
 
 ```
-✅ 良い例:
+良い例:
 > npm run devを実行したら以下のエラーが出ました：
 > 
 > Error: Cannot find module '@/components/Header'
@@ -707,4 +675,4 @@ Claude Codeは単なるチャットボットではなく、本格的な開発ツ
 
 公式ドキュメント: https://docs.anthropic.com/claude-code
 
-Happy Coding with Claude! 🚀
+Happy Coding with Claude!
